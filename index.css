@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.posi{
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.items{
+    line-height: 35px;
+}
+.items a{
+    color: #7C7C7C;
+    text-decoration: none;
+}
+.link-game{
+    width: 110px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #B20000;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+}
+.link-game:hover{
+    background-color: #8E0000;
+    color: white;
+}
+/* respon sidebar */
+.offcanvas{
+   background-color: #F2F4F7; 
+}
+.side-nav a{
+    line-height: 60px;
+}
+
+.splide {
+    margin: auto;
+}
+.on-logo{
+    position: absolute;
+    width: 50px;
+    text-align: center;
+    font-size: 10px;
+    background-color: white;
+    color: blue;
+    border: blue solid 2px;
+}
+.on-click .img-live .on-logo{
+    transition: 1s all ease;
+}
+/* body */
+.faq-container{
+    /* max-width: 800px; */
+    height: auto;
+    margin: auto;
+    margin-top: 60px;
+    font-family: 'Roboto', sans-serif;
+}
+.faq-container h1{
+    font-weight: 500;
+}
+.faq-container ul{
+    margin-left: -40px;
+}
+.faq-container ul li{
+    list-style: none;
+}
+
+/* visible heading area */
+.faq-container ul li div:first-child{
+    border-top: 1px solid #e5e5e5;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    transition-duration: .25s;
+} 
+
+/* svg arrow and h3 heading */
+.faq-container ul li svg{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    left: 6px;
+    transition-duration: .25s;
+}
+.faq-container ul li h3{
+    font-weight: 400;
+    margin: 0px;
+    padding: 13px 40px;
+    padding-right: 10px;
+}
+
+/* invisible content area */
+.faq-container ul li div:last-child{
+    line-height: 24px;
+    padding-right: 10px;
+    overflow: hidden;
+    /* initial height 0px */
+    height: 0px;
+    transition: height 0.25s ease-out;
+}
+.faq-container ul li div:last-child span{
+    display: block;
+    padding: 20px 40px;
+    padding-right: 10px;
+}
+
+/* bottom border for last li */
+.faq-container ul li:last-child div:last-child{
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* for active */
+.faq-container ul li.active div:first-child{
+    background-color: #f1f1f1;
+}
+.faq-container ul li.active svg{
+    transform: rotate(180deg);
+}
+/* footer */
+.effect-snow{
+    animation: snow 20s linear infinite;
+    background-image: url('./img/snow1.png') , url('./img/snow2.png');
+}
+@keyframes snow {
+    0%{
+        background-position: 0 0, 0 0, 0 0;
+    }
+
+    100%{
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+    }
+}
+
+/* slot */
+.slot{
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: white;
+    color: blue;
+    border: blue solid 2px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+}
+
+/* reading */
+.reading{
+    color: blue;
+    padding: 5px 15px;
+    text-decoration: none;
+    transition: .5s all ease;
+    border: blue solid 2px;
+}
+.reading:hover{
+    background-color: blue; 
+    color: white;
+}
